@@ -12,5 +12,7 @@ SolidQueueInterface::Engine.routes.draw do
     get :paused, on: :collection
   end
 
+  resources :semaphores, only: :index, as: :solid_queue_interface_semaphores
+
   root to: "jobs#index"
 end

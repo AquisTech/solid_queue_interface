@@ -1,0 +1,25 @@
+<h1>Semaphores</h1>
+<table class='table'>
+  <thead class='thead'>
+    <tr class='thead-tr'>
+      <th class='thead-th'>#</th>
+      <th class='thead-th'>Key</th>
+      <th class='thead-th'>Value</th>
+      <th class='thead-th'>Created</th>
+      <th class='thead-th'>Updated</th>
+      <th class='thead-th'>Expires</th>
+    </tr>
+  </thead>
+  <tbody class='tbody'>
+    <% @semaphores.each do |semaphore| %>
+      <tr class='tbody-tr'>
+        <td class='tbody-td'><%= semaphore.id %></td>
+        <td class='tbody-td'><%= semaphore.key %></td>
+        <td class='tbody-td'><%= semaphore.value %></td>
+        <td class='tbody-td'><%= semaphore.created_at %></td>
+        <td class='tbody-td'><%= semaphore.updated_at %></td>
+        <td class='tbody-td'><%= semaphore.expires_at %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
