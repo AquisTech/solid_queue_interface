@@ -8,8 +8,10 @@ SolidQueueInterface::Engine.routes.draw do
     get :recurring, on: :collection
   end
 
-  resources :queues, only: :index, as: :solid_queue_interface_queues do
+  resources :queues, only: :index, param: :queue_name, as: :solid_queue_interface_queues do
     get :paused, on: :collection
+    post :pause, on: :member
+    post :resume, on: :member
   end
 
   resources :semaphores, only: :index, as: :solid_queue_interface_semaphores
