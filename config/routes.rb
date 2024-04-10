@@ -16,5 +16,7 @@ SolidQueueInterface::Engine.routes.draw do
 
   resources :semaphores, only: :index, as: :solid_queue_interface_semaphores
 
+  resources :processes, only: :index, as: :solid_queue_interface_processes
+
   root to: "jobs#index"
 end
