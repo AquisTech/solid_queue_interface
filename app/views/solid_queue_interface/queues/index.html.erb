@@ -1,0 +1,17 @@
+<h1>All Queues</h1>
+<table class='table'>
+  <thead class='thead'>
+    <tr class='thead-tr'>
+      <th class='thead-th'>Name</th>
+      <th class='thead-th'>Size</th>
+    </tr>
+  </thead>
+  <tbody class='tbody'>
+    <% @queues.each do |queue| %>
+      <tr class='tbody-tr'>
+        <td class='tbody-td'><%= queue.name %></td>
+        <td class='tbody-td'><%= queue.size %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
