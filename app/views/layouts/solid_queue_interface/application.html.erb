@@ -7,9 +7,9 @@
 
   <%= stylesheet_link_tag    "solid_queue_interface/application", media: "all" %>
 </head>
-<body>
-
-<%= yield %>
+<body id='solid_queue_interface' class='solid_queue_interface-<%= controller_name %>-<%= action_name %>'>
+  <%= render partial: 'layouts/solid_queue_interface/navbar' %>
+  <%= yield %>
 
 </body>
 </html>

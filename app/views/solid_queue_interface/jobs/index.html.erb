@@ -1,0 +1,33 @@
+<h1>All Jobs</h1>
+<table class='table'>
+  <thead class='thead'>
+    <tr class='thead-tr'>
+      <th class='thead-th'>#</th>
+      <th class='thead-th'>Class</th>
+      <th class='thead-th'>Queue</th>
+      <th class='thead-th'>Arguments</th>
+      <th class='thead-th'>Priority</th>
+      <th class='thead-th'>Active Job ID</th>
+      <th class='thead-th'>Concurrency Key</th>
+      <th class='thead-th'>Created</th>
+      <th class='thead-th'>Scheduled</th>
+      <th class='thead-th'>Finished</th>
+    </tr>
+  </thead>
+  <tbody class='tbody'>
+    <% @jobs.each do |job| %>
+      <tr class='tbody-tr'>
+        <td class='tbody-td'><%= job.id %></td>
+        <td class='tbody-td'><%= job.class_name %></td>
+        <td class='tbody-td'><%= job.queue_name %></td>
+        <td class='tbody-td'><%= job.arguments %></td>
+        <td class='tbody-td'><%= job.priority %></td>
+        <td class='tbody-td'><%= job.active_job_id %></td>
+        <td class='tbody-td'><%= job.concurrency_key %></td>
+        <td class='tbody-td'><%= job.created_at %></td>
+        <td class='tbody-td'><%= job.scheduled_at %></td>
+        <td class='tbody-td'><%= job.finished_at %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,12 @@
+<header class='navbar'>
+  <%= link_to 'SolidQueueInterface', root_path, class: 'navbar-link' %>
+  <%= link_to 'Processes', solid_queue_interface_jobs_path, class: 'navbar-link' %>
+  <%= link_to 'Queues', solid_queue_interface_jobs_path, class: 'navbar-link' %>
+  <%= link_to 'All Jobs', solid_queue_interface_jobs_path, class: 'navbar-link' %>
+  <%= link_to 'Scheduled Jobs', scheduled_solid_queue_interface_jobs_path, class: 'navbar-link' %>
+  <%= link_to 'Failed Jobs', failed_solid_queue_interface_jobs_path, class: 'navbar-link' %>
+  <%= link_to 'Blocked Jobs', blocked_solid_queue_interface_jobs_path, class: 'navbar-link' %>
+  <%= link_to 'Claimed Jobs', claimed_solid_queue_interface_jobs_path, class: 'navbar-link' %>
+  <%= link_to 'Ready Jobs', ready_solid_queue_interface_jobs_path, class: 'navbar-link' %>
+  <%= link_to 'Recurring Jobs', recurring_solid_queue_interface_jobs_path, class: 'navbar-link' %>
+</header>

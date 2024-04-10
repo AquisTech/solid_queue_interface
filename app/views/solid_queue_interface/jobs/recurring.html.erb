@@ -1,0 +1,23 @@
+<h1>Recurring Executions</h1>
+<table class='table'>
+  <thead class='thead'>
+    <tr class='thead-tr'>
+      <th class='thead-th'>#</th>
+      <th class='thead-th'>Job ID</th>
+      <th class='thead-th'>Task Key</th>
+      <th class='thead-th'>Run At</th>
+      <th class='thead-th'>Created</th>
+    </tr>
+  </thead>
+  <tbody class='tbody'>
+    <% @jobs.each do |job| %>
+      <tr class='tbody-tr'>
+        <td class='tbody-td'><%= job.id %></td>
+        <td class='tbody-td'><%= job.job_id %></td>
+        <td class='tbody-td'><%= job.task_key %></td>
+        <td class='tbody-td'><%= job.run_at %></td>
+        <td class='tbody-td'><%= job.created_at %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
