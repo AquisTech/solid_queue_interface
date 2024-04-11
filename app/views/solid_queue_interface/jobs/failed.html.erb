@@ -4,8 +4,11 @@
     <tr class='thead-tr'>
       <th class='thead-th'>#</th>
       <th class='thead-th'>Job ID</th>
-      <th class='thead-th'>Error</th>
+      <th class='thead-th'>Exception Class</th>
+      <th class='thead-th'>Exception Message</th>
+      <th class='thead-th'>Error Details</th>
       <th class='thead-th'>Created</th>
+      <th class='thead-th'>Retry</th>
     </tr>
   </thead>
   <tbody class='tbody'>
@@ -13,8 +16,11 @@
       <tr class='tbody-tr'>
         <td class='tbody-td'><%= job.id %></td>
         <td class='tbody-td'><%= job.job_id %></td>
-        <td class='tbody-td'><%= job.error %></td>
+        <td class='tbody-td'><%= job.exception_class %></td>
+        <td class='tbody-td'><%= job.message %></td>
+        <td class='tbody-td'><%= link_to 'Backtrace', solid_queue_interface_job_path(job) %></td>
         <td class='tbody-td'><%= job.created_at %></td>
+        <td class='tbody-td'><%= button_to "Retry Job", retry_solid_queue_interface_job_path(job) %></td>
       </tr>
     <% end %>
   </tbody>

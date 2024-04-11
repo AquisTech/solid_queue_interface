@@ -27,5 +27,15 @@ module SolidQueueInterface
     def recurring
       @jobs = SolidQueue::RecurringExecution.order(created_at: :desc)
     end
+
+    def show
+      @job = SolidQueue::FailedExecution.find(params[:id])
+    end
+
+    def retry
+      @job = SolidQueue::Job.find(params[:id])
+      @job.retry
+      redirect_to failed_solid_queue_interface_jobs_path, notice: "Successfully retried Job ##{@job.id}"
+    end
   end
 end
