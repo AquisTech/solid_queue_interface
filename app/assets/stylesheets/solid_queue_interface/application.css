@@ -13,3 +13,57 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Table styling */
+#solid_queue_interface table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+  width: 100%;
+}
+/* Show alternate striped table rows */
+#solid_queue_interface table thead tr,
+#solid_queue_interface table tbody tr:nth-of-type(even) {
+  background: #f7f8f9;
+}
+/* Highlight hovered table row */
+#solid_queue_interface table tbody tr:hover {
+  background: #eef0f3;
+}
+/* Table TD styling */
+#solid_queue_interface table td {
+  border-bottom: .05rem solid #dadee4;
+  padding: .6rem .4rem;
+  vertical-align: top;
+}
+/* Table TH styling */
+#solid_queue_interface table th {
+  border-top: .1rem solid #dadee4;
+  border-bottom: .1rem solid #dadee4;
+  padding: .6rem .4rem;
+  vertical-align: top;
+}
+
+/* Navbar styling */
+#solid_queue_interface .navbar {
+  align-items: stretch;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: stretch;
+  -ms-flex-pack: justify;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* Navbar Logo */
+#solid_queue_interface .navbar .navbar-brand {
+  font-weight: bold;
+  text-decoration: none;
+}
+/* Navbar Link */
+#solid_queue_interface .navbar .navbar-link {
+  padding: 0 0.5em;
+}

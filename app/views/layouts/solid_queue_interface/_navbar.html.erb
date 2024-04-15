@@ -1,5 +1,7 @@
 <header class='navbar'>
-  <%= link_to 'SolidQueueInterface', root_path, class: 'navbar-link' %>
+  <%= link_to root_path, class: 'navbar-brand' do %>
+    <b>SolidQueueInterface</b>
+  <% end %>
   <%= link_to 'Processes', solid_queue_interface_processes_path, class: 'navbar-link' %>
   <%= link_to 'All Queues', solid_queue_interface_queues_path, class: 'navbar-link' %>
   <%= link_to 'Paused Queues', paused_solid_queue_interface_queues_path, class: 'navbar-link' %>

@@ -6,6 +6,9 @@
   <%= csp_meta_tag %>
 
   <%= stylesheet_link_tag    "solid_queue_interface/application", media: "all" %>
+  <style type="text/css">
+    <%== Pagy.root.join('stylesheets', 'pagy.css').read %>
+  </style>
 </head>
 <body id='solid_queue_interface' class='solid_queue_interface-<%= controller_name %>-<%= action_name %>'>
   <%= render partial: 'layouts/solid_queue_interface/navbar' %>

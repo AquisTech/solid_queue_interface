@@ -25,11 +25,9 @@ Update `config/routes.rb` to mount `SolidQueueInterface::Engine` like so:
 Now you can access SolidQueueInterface at `<YOUR_URL>/solid_queue_interface`
 
 ## ToDo
-* Pagination with `pagy` gem
-* Basic styling support
+* Generator to copy views to your project for overriding
 * Sorting on columns
 * Searching on columns
-* Generator to copy views to your project for overriding
 
 ## Contributing
 Bug reports, feature requests and pull requests are welcome on GitHub at [https://github.com/aquistech/solid_queue_interface](https://github.com/aquistech/solid_queue_interface). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/aquistech/solid_queue_interface/blob/main/CODE_OF_CONDUCT.md).
