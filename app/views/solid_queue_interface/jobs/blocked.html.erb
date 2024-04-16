@@ -1,26 +1,26 @@
 <h1>Blocked Executions</h1>
-<table class='table'>
-  <thead class='thead'>
-    <tr class='thead-tr'>
-      <th class='thead-th'>ID</th>
-      <th class='thead-th'>Job ID</th>
-      <th class='thead-th'>Queue</th>
-      <th class='thead-th'>Priority</th>
-      <th class='thead-th'>Concurrency Key</th>
-      <th class='thead-th'>Created</th>
-      <th class='thead-th'>Expires</th>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Job ID</th>
+      <th>Queue</th>
+      <th>Priority</th>
+      <th>Concurrency Key</th>
+      <th>Created</th>
+      <th>Expires</th>
     </tr>
   </thead>
-  <tbody class='tbody'>
+  <tbody>
     <% @jobs.each do |job| %>
-      <tr class='tbody-tr'>
-        <td class='tbody-td'><%= job.id %></td>
-        <td class='tbody-td'><%= job.job_id %></td>
-        <td class='tbody-td'><%= job.queue_name %></td>
-        <td class='tbody-td'><%= job.priority %></td>
-        <td class='tbody-td'><%= job.concurrency_key %></td>
-        <td class='tbody-td'><%= job.created_at %></td>
-        <td class='tbody-td'><%= job.expires_at %></td>
+      <tr>
+        <td><%= job.id %></td>
+        <td><%= job.job_id %></td>
+        <td><%= job.queue_name %></td>
+        <td><%= job.priority %></td>
+        <td><%= job.concurrency_key %></td>
+        <td><%= job.created_at %></td>
+        <td><%= job.expires_at %></td>
       </tr>
     <% end %>
   </tbody>

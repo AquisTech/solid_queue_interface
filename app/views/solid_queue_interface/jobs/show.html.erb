@@ -1,26 +1,26 @@
 <h1>Failed Executions Details For #<%= @job.id %></h1>
-<table class='table'>
-  <thead class='thead'>
-    <tr class='thead-tr'>
-      <th class='thead-th'>Attribute</th>
-      <th class='thead-th'>Details</th>
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Details</th>
     </tr>
   </thead>
-  <tbody class='tbody'>
+  <tbody>
     <% attributes = { id: 'ID', job_id: 'Job ID', created_at: 'Created', exception_class: 'Exception Class', message: 'Exception Message' } %>
     <% attributes.each do |method, title| %>
-      <tr class='tbody-tr'>
-        <td class='tbody-td'><b><%= title %></b></td>
-        <td class='tbody-td'><%= @job.send(method) %></td>
+      <tr>
+        <td><b><%= title %></b></td>
+        <td><%= @job.send(method) %></td>
       </tr>
     <% end %>
-    <tr class='tbody-tr'>
-      <td class='tbody-td'><b>Backtrace</b></td>
-      <td class='tbody-td'><%= @job.backtrace.join("<br>").html_safe %></td>
+    <tr>
+      <td><b>Backtrace</b></td>
+      <td><%= @job.backtrace.join("<br>").html_safe %></td>
     </tr>
-    <tr class='tbody-tr'>
-      <td class='tbody-td'><b>Action</b></td>
-      <td class='tbody-td'><%= button_to "Retry Job", retry_solid_queue_interface_job_path(@job) %></td>
+    <tr>
+      <td><b>Action</b></td>
+      <td><%= button_to "Retry Job", retry_solid_queue_interface_job_path(@job) %></td>
     </tr>
   </tbody>
 </table>

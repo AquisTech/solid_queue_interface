@@ -1,18 +1,18 @@
 <h1>Paused Queues</h1>
-<table class='table'>
-  <thead class='thead'>
-    <tr class='thead-tr'>
-      <th class='thead-th'>#</th>
-      <th class='thead-th'>Name</th>
-      <th class='thead-th'>Created</th>
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Created</th>
     </tr>
   </thead>
-  <tbody class='tbody'>
+  <tbody>
     <% @queues.each do |queue| %>
-      <tr class='tbody-tr'>
-        <td class='tbody-td'><%= queue.id %></td>
-        <td class='tbody-td'><%= queue.queue_name %></td>
-        <td class='tbody-td'><%= queue.created_at %></td>
+      <tr>
+        <td><%= queue.id %></td>
+        <td><%= queue.queue_name %></td>
+        <td><%= queue.created_at %></td>
       </tr>
     <% end %>
   </tbody>

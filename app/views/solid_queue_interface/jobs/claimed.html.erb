@@ -1,20 +1,20 @@
 <h1>Claimed Executions</h1>
-<table class='table'>
-  <thead class='thead'>
-    <tr class='thead-tr'>
-      <th class='thead-th'>ID</th>
-      <th class='thead-th'>Job ID</th>
-      <th class='thead-th'>Process ID</th>
-      <th class='thead-th'>Created</th>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Job ID</th>
+      <th>Process ID</th>
+      <th>Created</th>
     </tr>
   </thead>
-  <tbody class='tbody'>
+  <tbody>
     <% @jobs.each do |job| %>
-      <tr class='tbody-tr'>
-        <td class='tbody-td'><%= job.id %></td>
-        <td class='tbody-td'><%= job.job_id %></td>
-        <td class='tbody-td'><%= job.process_id %></td>
-        <td class='tbody-td'><%= job.created_at %></td>
+      <tr>
+        <td><%= job.id %></td>
+        <td><%= job.job_id %></td>
+        <td><%= job.process_id %></td>
+        <td><%= job.created_at %></td>
       </tr>
     <% end %>
   </tbody>

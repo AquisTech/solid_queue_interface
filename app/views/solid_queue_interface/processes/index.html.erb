@@ -1,34 +1,34 @@
 <h1>Processes</h1>
-<table class='table'>
-  <thead class='thead'>
-    <tr class='thead-tr'>
-      <th class='thead-th'>ID</th>
-      <th class='thead-th'>Kind</th>
-      <th class='thead-th'>Last Heartbeat At</th>
-      <th class='thead-th'>Supervisor</th>
-      <th class='thead-th'>PID</th>
-      <th class='thead-th'>Hostname</th>
-      <th class='thead-th'>Metadata</th>
-      <th class='thead-th'>Created</th>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Kind</th>
+      <th>Last Heartbeat At</th>
+      <th>Supervisor</th>
+      <th>PID</th>
+      <th>Hostname</th>
+      <th>Metadata</th>
+      <th>Created</th>
     </tr>
   </thead>
-  <tbody class='tbody'>
+  <tbody>
     <% @processes.each do |process| %>
-      <tr class='tbody-tr'>
-        <td class='tbody-td'><%= process.id %></td>
-        <td class='tbody-td'><%= process.kind %></td>
-        <td class='tbody-td'><%= process.last_heartbeat_at %></td>
-        <td class='tbody-td'><%= process.supervisor_id %></td>
-        <td class='tbody-td'><%= process.pid %></td>
-        <td class='tbody-td'><%= process.hostname %></td>
-        <td class='tbody-td'>
+      <tr>
+        <td><%= process.id %></td>
+        <td><%= process.kind %></td>
+        <td><%= process.last_heartbeat_at %></td>
+        <td><%= process.supervisor_id %></td>
+        <td><%= process.pid %></td>
+        <td><%= process.hostname %></td>
+        <td>
           <ul>
             <% process.metadata.each do |setting, value| %>
               <li><%= setting %>: <%= value %></li>
             <% end %>
           </ul>
         </td>
-        <td class='tbody-td'><%= process.created_at %></td>
+        <td><%= process.created_at %></td>
       </tr>
     <% end %>
   </tbody>

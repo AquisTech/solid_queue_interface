@@ -1,32 +1,32 @@
 <h1>All Jobs</h1>
-<table class='table'>
-  <thead class='thead'>
-    <tr class='thead-tr'>
-      <th class='thead-th'>ID</th>
-      <th class='thead-th'>Class</th>
-      <th class='thead-th'>Queue</th>
-      <th class='thead-th'>Arguments</th>
-      <th class='thead-th'>Priority</th>
-      <th class='thead-th'>Active Job ID</th>
-      <th class='thead-th'>Concurrency Key</th>
-      <th class='thead-th'>Created</th>
-      <th class='thead-th'>Scheduled</th>
-      <th class='thead-th'>Finished</th>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Class</th>
+      <th>Queue</th>
+      <th>Arguments</th>
+      <th>Priority</th>
+      <th>Active Job ID</th>
+      <th>Concurrency Key</th>
+      <th>Created</th>
+      <th>Scheduled</th>
+      <th>Finished</th>
     </tr>
   </thead>
-  <tbody class='tbody'>
+  <tbody>
     <% @jobs.each do |job| %>
-      <tr class='tbody-tr'>
-        <td class='tbody-td'><%= job.id %></td>
-        <td class='tbody-td'><%= job.class_name %></td>
-        <td class='tbody-td'><%= job.queue_name %></td>
-        <td class='tbody-td'><%= job.arguments %></td>
-        <td class='tbody-td'><%= job.priority %></td>
-        <td class='tbody-td'><%= job.active_job_id %></td>
-        <td class='tbody-td'><%= job.concurrency_key %></td>
-        <td class='tbody-td'><%= job.created_at %></td>
-        <td class='tbody-td'><%= job.scheduled_at %></td>
-        <td class='tbody-td'><%= job.finished_at %></td>
+      <tr>
+        <td><%= job.id %></td>
+        <td><%= job.class_name %></td>
+        <td><%= job.queue_name %></td>
+        <td><%= job.arguments %></td>
+        <td><%= job.priority %></td>
+        <td><%= job.active_job_id %></td>
+        <td><%= job.concurrency_key %></td>
+        <td><%= job.created_at %></td>
+        <td><%= job.scheduled_at %></td>
+        <td><%= job.finished_at %></td>
       </tr>
     <% end %>
   </tbody>

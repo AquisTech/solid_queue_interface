@@ -1,18 +1,18 @@
 <h1>All Queues</h1>
-<table class='table'>
-  <thead class='thead'>
-    <tr class='thead-tr'>
-      <th class='thead-th'>Name</th>
-      <th class='thead-th'>Size</th>
-      <th class='thead-th'>Action</th>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Size</th>
+      <th>Action</th>
     </tr>
   </thead>
-  <tbody class='tbody'>
+  <tbody>
     <% @queues.each do |queue| %>
-      <tr class='tbody-tr'>
-        <td class='tbody-td'><%= queue.name %></td>
-        <td class='tbody-td'><%= queue.size %></td>
-        <td class='tbody-td'>
+      <tr>
+        <td><%= queue.name %></td>
+        <td><%= queue.size %></td>
+        <td>
           <% if queue.paused? %>
             <%= button_to 'Resume', resume_solid_queue_interface_queue_path(queue.name) %>
           <% else %>
