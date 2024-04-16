@@ -20,7 +20,7 @@
         <td><%= job.message %></td>
         <td><%= link_to 'Backtrace', solid_queue_interface_job_path(job) %></td>
         <td><%= job.created_at %></td>
-        <td><%= button_to "Retry Job", retry_solid_queue_interface_job_path(job) %></td>
+        <td><%= button_to "Retry Job", retry_solid_queue_interface_job_path(job), class: 'btn retry-btn' %></td>
       </tr>
     <% end %>
   </tbody>

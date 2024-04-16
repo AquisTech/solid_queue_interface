@@ -67,3 +67,22 @@ body {
 #solid_queue_interface .navbar .navbar-link {
   padding: 0 0.5em;
 }
+/* Styling for action buttons */
+#solid_queue_interface .btn {
+  border-width: 1px;
+  border-radius: 0.25rem;
+  border-style: solid;
+  color: white;
+}
+#solid_queue_interface .btn.retry-btn {
+  background: #198754;
+  border-color: #198754;
+}
+#solid_queue_interface .btn.pause-btn {
+  background: #dc3545;
+  border-color: #dc3545;
+}
+#solid_queue_interface .btn.resume-btn {
+  background: #198754;
+  border-color: #198754;
+}
