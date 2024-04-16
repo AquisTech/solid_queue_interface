@@ -1,0 +1,8 @@
+Description:
+    This generator is used to copy solid_queue_interface layout template and navbar partial to your project where you can customize SolidQueueInterface portal as per your needs.
+
+Example:
+    bin/rails g solid_queue_interface:override_layout_and_navbar
+
+    This will create:
+        Layout template `application.html.erb` and navbar partial `_navbar.html.erb` to `app/views/layouts/solid_queue_interface` of your project

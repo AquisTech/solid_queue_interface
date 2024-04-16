@@ -36,10 +36,14 @@ Also, `class` is assigned in format `solid_queue_interface-<controller_name>-<ac
 You can use `bin/rails g solid_queue_interface:override_views` to copy views to your project.
 You can then customize view code as per your needs and it will get reflected on SolidQueueInterface portal.
 You can keep only views that you need customization and you can delete other views so that they will be fetched from gem.
+### Layout and Navbar
+You can use `bin/rails g solid_queue_interface:override_layout_and_navbar` to copy layout template and navbar partial to your project.
+You can then customize layout and navbar code as per your needs and it will get reflected on SolidQueueInterface portal.
 
 ## ToDo
 * Sorting on columns
 * Searching on columns
+* Authorization
 
 ## Contributing
 Bug reports, feature requests and pull requests are welcome on GitHub at [https://github.com/aquistech/solid_queue_interface](https://github.com/aquistech/solid_queue_interface). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/aquistech/solid_queue_interface/blob/main/CODE_OF_CONDUCT.md).
