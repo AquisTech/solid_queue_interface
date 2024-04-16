@@ -24,6 +24,15 @@ Update `config/routes.rb` to mount `SolidQueueInterface::Engine` like so:
 ```
 Now you can access SolidQueueInterface at `<YOUR_URL>/solid_queue_interface`
 
+## Customization
+### CSS/UI Styling
+You can use `bin/rails g solid_queue_interface:override_css` which will create `overrides.css` in your project.
+You can then add your styles to that file and it will get reflected on SolidQueueInterface portal.
+You can even overrides default styles of navbar, tables or pagy (pagination) for the portal.
+You can refer to default styles are present in [solid_queue_interface/application.css](https://github.com/AquisTech/solid_queue_interface/blob/main/app/assets/stylesheets/solid_queue_interface/application.css)
+For easy customization, `<body>` of the portal is assigned with `id` as `solid_queue_interface`.
+Also, `class` is assigned in format `solid_queue_interface-<controller_name>-<action_name>` so that you can customize styles on controller-action basis.
+
 ## ToDo
 * Generator to copy views to your project for overriding
 * Sorting on columns

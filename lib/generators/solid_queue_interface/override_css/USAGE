@@ -1,0 +1,8 @@
+Description:
+    This generator is used to create `solid_queue_interface/overrides.css` in your project's `app/assets/stylesheets` folder where you can add custom styles to override default styles of tables, navbar and pagy for SolidQueueInterface portal.
+
+Example:
+    bin/rails g solid_queue_interface:override_css
+
+    This will create:
+        `solid_queue_interface/overrides.css` in your project's `app/assets/stylesheets` folder
