@@ -32,9 +32,12 @@ You can even overrides default styles of navbar, tables or pagy (pagination) for
 You can refer to default styles are present in [solid_queue_interface/application.css](https://github.com/AquisTech/solid_queue_interface/blob/main/app/assets/stylesheets/solid_queue_interface/application.css)
 For easy customization, `<body>` of the portal is assigned with `id` as `solid_queue_interface`.
 Also, `class` is assigned in format `solid_queue_interface-<controller_name>-<action_name>` so that you can customize styles on controller-action basis.
+### Views/UI
+You can use `bin/rails g solid_queue_interface:override_views` to copy views to your project.
+You can then customize view code as per your needs and it will get reflected on SolidQueueInterface portal.
+You can keep only views that you need customization and you can delete other views so that they will be fetched from gem.
 
 ## ToDo
-* Generator to copy views to your project for overriding
 * Sorting on columns
 * Searching on columns
 

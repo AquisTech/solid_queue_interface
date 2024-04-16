@@ -1,0 +1,20 @@
+Description:
+    This generator is used to copy solid_queue_interface views to your project's `app/views` folder where you can customize SolidQueueInterface portal as per your needs.
+
+Example:
+    bin/rails g solid_queue_interface:override_views
+
+    This will create:
+        Following files in your project's `app/views/solid_queue_interface` folder:
+            - jobs/blocked.html.erb
+            - jobs/claimed.html.erb
+            - jobs/failed.html.erb
+            - jobs/index.html.erb
+            - jobs/ready.html.erb
+            - jobs/recurring.html.erb
+            - jobs/scheduled.html.erb
+            - jobs/show.html.erb
+            - processes/index.html.erb
+            - queues/index.html.erb
+            - queues/paused.html.erb
+            - semaphores/index.html.erb
