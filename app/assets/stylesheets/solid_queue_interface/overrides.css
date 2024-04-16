@@ -1,0 +1,6 @@
+/* ************************** overrides.css ************************** */
+/* This CSS file is just a placeholder in gem.
+You can customize styles of elements by putting your styles in a file
+`solid_queue_interface/overrides.css` in your project.
+You can use rake task to copy this file to your project.
+Use command `rails g solid_queue_interface:override_css` */
